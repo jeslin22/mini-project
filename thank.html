@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Visit!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .star-rating {
+            font-size: 24px;
+            color: #f39c12;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .star-rating:hover {
+            color: #e67e22;
+        }
+
+        #thank-you-message {
+            display: none;
+            color: #27ae60;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You for Visiting Our Website!</h1>
+<p>We hope you had a great experienceWe wanted to take a moment to express our sincere gratitude for visiting our website. <br>Your interest means the world to us, and we're thrilled to have had the opportunity to connect with you online.<br> At A new adventure in ice cream , we are committed to providing   and creating a positive experience for our visitors.<br> Your presence on our website is a testament to our shared interests, and we're excited about the possibility of serving you in the future.<br> If you have any questions, feedback, or if there's anything specific you'd like to know more about, please don't hesitate to reach out.<br> We value your input and are here to assist in any way we can.<br> Once again, thank you for taking the time to explore our website. We look forward to the possibility of connecting with you further.. Please rate your visit:</p>
+    <p>We hope you had a great experience. Please rate your visit:</p>
+
+    <div>
+        <span class="star-rating" onclick="rate(1)">⭐</span>
+        <span class="star-rating" onclick="rate(2)">⭐</span>
+        <span class="star-rating" onclick="rate(3)">⭐</span>
+        <span class="star-rating" onclick="rate(4)">⭐</span>
+        <span class="star-rating" onclick="rate(5)">⭐</span>
+    </div>
+
+    <p id="thank-you-message">Thank you for your 5-star rating! We appreciate your feedback.</p>
+
+    <script>
+        function rate(stars) {
+            document.getElementById('thank-you-message').style.display = 'block';
+            // You can handle the rating submission here (e.g., send it to the server)
+            console.log(`User rated ${stars} stars.`);
+        }
+    </script>
+</body>
+</html>
